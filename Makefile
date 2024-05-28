@@ -1,6 +1,9 @@
 default:
 	composer dump-autoload
 
+dev:
+	APP_ENV=prod composer update
+
 prod:
 	rm -r vendor
 	APP_ENV=prod composer update -o -a --no-dev --prefer-dist --no-scripts
