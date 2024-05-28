@@ -1,6 +1,10 @@
 default:
 	composer dump-autoload
 
+prod:
+	rm -r vendor
+	APP_ENV=prod composer update -o -a --no-dev --prefer-dist --no-scripts
+
 test: phpcpd phpmd phpstan psalm rector
 
 rector:
