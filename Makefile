@@ -20,7 +20,7 @@ phpmd:
 	./vendor/bin/phpmd src text cleancode,codesize,controversial,design,unusedcode
 
 phpstan:
-	php vendor/bin/phpstan
+	./vendor/bin/phpstan
 
 psalm:
 	./vendor/bin/psalm
