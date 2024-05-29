@@ -6,6 +6,12 @@ Looks good on a 800x480 display in fullscreen.
 
 Has some C=64 vibes. :)
 
+## purpose & focus
+
+This one is not limited to just rendering a clock. You can do a lot more. A clock was just nice because it was reloading every second so I could skip on pressing F5. :D
+
+This is just an example on how to use generators and typehinting them.
+
 ## compiling the autoloader
 
 Open a shell (aka bash, prompt, terminal, command line)
