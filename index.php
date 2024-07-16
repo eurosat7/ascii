@@ -25,8 +25,8 @@ $format = match ($s % 2) {
 $m = (int) $now->format('m');
 $pixX = ($m * 20 - $s * 2) % 58;
 $pixY = ($m * 60 + $s) % 11;
-$ascii->fill($palette->getCharForLuminance(0.50), x: 0, y: $pixY, dx: 37, dy: $pixY + 1);
-$ascii->fill($palette->getCharForLuminance(0.75), x: 0, y: $pixX, dx: 37, dy: $pixX + 1);
+$ascii->fill($palette->getCharForLuminance(0.50), x: 0, y: $pixY, dx: 38, dy: $pixY + 1);
+$ascii->fill($palette->getCharForLuminance(0.75), x: 0, y: $pixX, dx: 38, dy: $pixX + 1);
 
 $ascii->color = $palette->getCharForLuminance(1.00);
 $ascii->print(($now)->format($format), x: 3, y: 2);
